@@ -10,11 +10,6 @@ jobs: # basic units of work in a run
           command: |
             echo 'export VAR1="COXINHA1"' >> $BASH_ENV
             echo 'export VAR2="COXINHA2"' >> $BASH_ENV
-      - run:
-          name: Isso ai
-          command: |
-            echo ${VAR1}
-            echo ${VAR2}
                         
       - run:
           name: Create revision file
@@ -23,3 +18,6 @@ jobs: # basic units of work in a run
             Date: ${VAR1}
             Project: ${VAR2}            
             !
+      - run:
+          name: Vamo ve
+          command: cat teste.txt          
