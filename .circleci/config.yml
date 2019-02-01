@@ -18,3 +18,12 @@ jobs: # basic units of work in a run
           command: |
             echo ${VAR1}
             echo ${VAR2}
+            
+            
+       - run:
+          name: Create revision file
+          command: |
+            cat > "teste.txt" <<!
+            Date: ${VAR1}
+            Project: ${VAR2}            
+            !
