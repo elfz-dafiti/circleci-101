@@ -10,8 +10,8 @@ jobs: # basic units of work in a run
       - run:
           name: Setup Environment Variables
           command: |
-            echo 'export VAR1="COXINHA1' >> $BASH_ENV
-            echo 'export VAR2="COXINHA2' >> $BASH_ENV
+            echo 'export VAR1="COXINHA1"' >> $BASH_ENV
+            echo 'export VAR2="COXINHA2"' >> $BASH_ENV
             
       - run:
           name: Isso ai
